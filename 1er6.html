@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position box</title>
+    <style>
+        .container{
+            /* position: relative; */
+        }
+        .box{
+            border: 2px dotted tomato;
+
+            width: 500px;
+            height:250px;
+        }
+        .panda{
+            /* position: relative; */
+            /* top:31px; */
+            /* position: sticky;
+            top:10px; */
+            /* position: fixed;
+            top:10px; */
+        }
+        /* .omi{
+            position: absolute;
+            top:40px;
+            left:50px;
+        } */
+         .dummy{
+            border:2px solid lightblue;
+           width: 500px;
+            height:250px;
+
+         }
+         a::after{
+            content: "-->";
+
+         }
+         a:visited{
+            color:red;
+         }
+         ::selection{
+            background-color: yellow;
+         }
+         input:focus{
+            background-color: black;
+            border-radius: 10px;
+           border: 2px solid red;
+           color:white;
+           outline: 0;
+         }
+         input{
+            margin-top:10px;
+         }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqEwgCEC4YgwEYxwEYsQMY0QMYgAQyDggAEEUYJxg7GIAEGIoFMgYIARBFGDkyEwgCEC4YgwEYxwEYsQMY0QMYgAQyBggDEEUYQTIGCAQQRRhBMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEIMjA4M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Click here</a>
+    <br>
+    <a href="www.google.com">Click here</a><br>
+    <div class="in">
+
+<input type="text" placeholder="Type here" ><br>
+
+<input type="text" placeholder="Type here" ><br>
+
+    <input type="text" placeholder="Type here" ><br>
+    </div>
+    <ul style="list-style-type:circle;" >
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
+    <div class="container">
+        <div class="box omi"><img src="./images/omi.jpg" alt="">
+        </div>
+        <div class="box panda"><img src="./images/panda.jpg" alt="">
+        </div>
+        <div class="box shrabon"><img src="./images/shrabon.jpg" alt="">
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    
+</body>
+</html>
