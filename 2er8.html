@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/Gallery</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-template-rows:repeat(6,140px);
+            gap:3px;
+        }
+        img{height: 100%;
+        width:100%;}
+        .full-width{
+            grid-column:span 6;
+            grid-row: span 2;
+        }
+        .normal-width{
+            grid-column:span 2;
+            grid-row: span 2;
+        }
+        .wide-width{
+            grid-column:span 2;
+            grid-row: span 1;
+        }
+        @media screen and (max-width:576px){
+            .container{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            /* grid-template-rows:repeat(6,140px); */
+            gap:3px;
+
+        }
+        .full-width,.normal-width,.wide-width{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="full-width">   
+            <img src="./images/A.jpg" alt="">
+        </div>
+        <div class="normal-width">
+            <img src="./images/B.jpg" alt="">
+        </div>
+        <div class="normal-width">
+            <img src="./images/C.jpg" alt="">
+        </div>
+        <div class="wide-width">
+            <img src="./images/D.jpg" alt="">
+        </div>
+        <div class="wide-width">
+            <img src="./images/E.jpg" alt="">
+        </div>
+        <div class="normal-width">
+            <img src="./images/F.jpg" alt="">
+        </div>
+        <div class="repeat">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        
+        <div class="repeat">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        <div class="normal-width">
+            <img src="./images/I.jpg" alt="">
+        </div>
+        <div class="repeat">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        
+        <div class="repeat">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>
