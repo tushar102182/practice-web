@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animation</title>
+    <style>
+        @keyframes ball{
+            from{left:0;
+            }
+            to{
+                left:500px;
+                background-color: green;
+            }
+        }
+        .field{
+            position: relative;
+            left:25%;
+            /* top:50%; */
+            
+            height: 400px;
+            width: 600px;
+            border: 5px dashed salmon;
+            border-right: 4px dashed green;
+            border-left: 4px dashed red;
+        }
+        .ball{
+            height: 100px;
+            width:100px;
+            background-color: rgb(129, 6, 6);
+            border-radius: 50%;
+           position: relative;
+           animation: ball 2s ease-in-out .5s infinite alternate ;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

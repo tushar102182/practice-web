@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        header .p{
+            overflow-y: scroll;
+            height: 300px;
+            width: 300px;
+            border: 3px solid salmon;
+            transition: transform 2s, background-color 1s;
+        }
+        
+        .box{
+            border:3px solid slategrey;
+            background-color: rgba(247, 173, 144, 0.753);
+            width: 200px;
+            height: 200px;
+            font-size: 2rem;
+            transition: transform 2s linear 0.3s , background-color 1.5s ease-in-out .3s;
+        }
+        .box:hover,.p:hover{
+            transform:  scale(1.25) translateX(100px);
+            background-color: rgba(242, 255, 127, 0.605);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transition Tutorial</h1>
+<div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsam doloremque nemo distinctio placeat sint neque eum. Iste molestias doloribus nisi tempore eligendi illum aperiam? Magni similique earum deserunt porro saepe obcaecati corrupti alias facere officiis, dicta voluptate nam, optio fuga, dolores et illo quia repudiandae ut possimus! Earum, ea error quidem in et rem eum facilis quasi nesciunt ratione temporibus porro praesentium laborum dolores ipsam maiores, voluptate, tenetur dolor aspernatur ullam sequi. Expedita saepe ex omnis eos dicta unde qui quod natus nostrum, eaque commodi! Deserunt ipsa repellat repudiandae veritatis sunt soluta perspiciatis sed quia provident quod, incidunt molestias nesciunt fuga eveniet quisquam, maiores aut. Assumenda sapiente magnam quis vitae facilis aperiam blanditiis, atque suscipit neque eaque autem praesentium quisquam cum voluptas alias enim quas iusto dolor molestias. Optio dolores deserunt illum officia excepturi eos ut repudiandae voluptatum obcaecati dicta mollitia perferendis ab praesentium, omnis in soluta magni dolorem, recusandae officiis rem? Reprehenderit iure mollitia quas quos exercitationem at modi, itaque saepe officia! Porro ad est ab. Quod sequi autem natus ullam repellendus eaque eligendi molestiae voluptas odio aliquid, modi magni, totam, quibusdam esse quisquam itaque corporis a delectus? Quia voluptatum cupiditate aliquid distinctio rem exercitationem suscipit! Voluptates, dolore?</div>
+    </header>
+    <main>
+<div class="box">
+    <div class="box-1">interface -1</div>
+</div>
+<div class="box">
+    <div class="box-2">interface -2</div>
+</div>
+<div class="box">
+    <div class="box-3">interface -3</div>
+</div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
