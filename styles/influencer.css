@@ -1,0 +1,14 @@
+.header-container li,.header-container a{
+text-decoration: none;
+list-style: none;
+}
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.gap10{
+    gap:10px;
+}
+/*  */
